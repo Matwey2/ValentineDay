@@ -23,6 +23,7 @@ body {
     color: white;
     background-color: red;
     height: 40px !important;
+    width: 40px;
     width: auto;
     border: none;
     cursor: pointer;
@@ -40,7 +41,8 @@ body {
     border: none;
     background-color: green;
     cursor: pointer;
-    height: 40px;
+    height: 60px;
+    width: 60px;
 
     p {
         margin: 0;

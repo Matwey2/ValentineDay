@@ -4,7 +4,7 @@ const answers = [
     "Точно точно точно впевнена???",
     "Може подумай ще раз?",
     "Ну будь ласочка(((((?",
-    "Чому ти така холодна?",
+    "Та за шо........?",
     "Давай поговоримо про це?",
     "Я тебе дуже люблю ну будь ласка!",
     "Окей, тепер ти робиш мені боляче!",
@@ -58,4 +58,3 @@ yes_button.addEventListener('click', () => {
     let message = document.getElementsByClassName('message')[0];
     message.style.display = "block";
 });
-gcloud run deploy ValentineCardKatryaAndMatvii --source .
