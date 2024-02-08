@@ -16,6 +16,7 @@ body {
     flex-direction: row;
     align-items: end;
     flex-wrap: wrap;
+    
 }
 
 #no-button {
@@ -23,11 +24,12 @@ body {
     color: white;
     background-color: red;
     height: 40px !important;
-    width: 40px;
+    min-width: 60px;
     width: auto;
     border: none;
     cursor: pointer;
     margin-top: 10px;
+    padding: 3px;
 
     p {
         margin: 0;
@@ -41,7 +43,7 @@ body {
     border: none;
     background-color: green;
     cursor: pointer;
-    height: 60px;
+    height: 40px;
     width: 60px;
 
     p {
@@ -81,5 +83,7 @@ body {
         height: 250px;
     }
 }
-
-/* Path: /js/script.js */
+button{
+    border-radius: 20px;
+    width: 60px;
+}
