@@ -58,3 +58,9 @@ yes_button.addEventListener('click', () => {
     let message = document.getElementsByClassName('message')[0];
     message.style.display = "block";
 });
+no_button.addEventListener('mouseover', function(){
+    banner.src = "no.gif";
+} )
+no_button.addEventListener('mouseout', function(){
+    banner.src = 'mid.gif';
+})
