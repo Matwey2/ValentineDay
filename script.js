@@ -3,15 +3,15 @@ const answers = [
     "Точно впевнена??",
     "Точно точно точно впевнена???",
     "Може подумай ще раз?",
-    "Ну будь ласочка(((((?",
+    "Ну будь ласочка!!!?",
     "Та за шо........?",
-    "Давай поговоримо про це?",
-    "Я тебе дуже люблю ну будь ласка!",
-    "Окей, тепер ти робиш мені боляче!",
+    "Жееееесть......",
+    "Я такого не очікував канєшно...",
+    "Це вже знущання!!!!",
     "Ти така злюка!!!!",
-    "Чому ти робиш це зі мною((((?????",
-    "Будь ласка дай мені шанс!!!!",
-    "Я благаю тебе зупинись!!!!",
+    "Чому ти робиш це зі мною?????",
+    "Я прям афігєл від такого повороту - _ -",
+    "Ну давай,давай натискай, я просто оновлю сторінку",
     "Ндааа, почнімо спочатку.."
 ]
 
@@ -27,7 +27,7 @@ no_button.addEventListener('click', () => {
     if (clicks === 0) banner.src = "no.gif";
     clicks++;
     // increase button height and width gradually to 250px
-    const sizes = [40, 50, 30, 35, 45]
+    const sizes = [20, 25, 15, 17, 24]
     const random = Math.floor(Math.random() * sizes.length);
     size += sizes[random]
     yes_button.style.height = `${size}px`;
@@ -41,8 +41,8 @@ no_button.addEventListener('click', () => {
         alert(answers[i]);
         i = 0;
         no_button.innerHTML = "Ні";
-        yes_button.style.height = "50px";
-        yes_button.style.width = "50px";
+        yes_button.style.height = "60px";
+        yes_button.style.width = "60px";
         size = 50;
     }
 });
@@ -57,9 +57,12 @@ yes_button.addEventListener('click', () => {
     // show message div
     let message = document.getElementsByClassName('message')[0];
     message.style.display = "block";
+    var hiddenText = document.getElementById('hide');
+    hiddenText.style.display = 'none';
 });
-no_button.addEventListener('mouseover', function(){
+no_button.addEventListener('mouseover', function() {
     banner.src = "no.gif";
+   
 } )
 no_button.addEventListener('mouseout', function(){
     banner.src = 'mid.gif';
